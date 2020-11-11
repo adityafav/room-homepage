@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Spartan-Light";
+  src: url("../font/Spartan-Medium.ttf");
+}
+@font-face {
+  font-family: "Spartan-Medium";
+  src: url("../font/Spartan-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Spartan-Bold";
+  src: url("../font/Spartan-Bold.ttf");
+}
+body {
+  font-family: "Spartan-Light";
+  font-size: 12px;
+}
+
+.hidden, #hidden {
+  display: none;
+}
+
+button, a {
+  cursor: pointer;
+}
+
+h1 {
+  font-family: "Spartan-Bold";
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=root.css.map */

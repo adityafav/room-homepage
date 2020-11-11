@@ -1,0 +1,52 @@
+$darkgray   : hsl(0, 0%, 27%);
+$gray       : hsl(0, 0%, 63%);
+$black      : hsl(0, 0%, 0%);
+$white      : hsl(0, 0%, 100%);
+
+
+@font-face{
+    font-family: "Spartan-Light";
+    src: url("../font/Spartan-Medium.ttf");
+}
+@font-face{
+    font-family: "Spartan-Medium";
+    src: url("../font/Spartan-SemiBold.ttf");
+}
+@font-face{
+    font-family: "Spartan-Bold";
+    src: url("../font/Spartan-Bold.ttf");
+}
+
+body{
+    font-family: "Spartan-Light";
+    font-size: 12px;
+}
+
+.hidden, #hidden{
+    display: none;
+}
+
+button, a{
+    cursor: pointer;
+    padding: 0;
+}
+
+h1{
+    font-family: "Spartan-Medium";
+    font-size: 26px;
+}
+h4{
+    font-family: "Spartan-Bold";
+    letter-spacing: 5px;
+}
+p{
+    color: $gray;
+    line-height: 1.2rem;
+}
+
+@media screen and (min-width: 376px){
+    h1{
+        font-family: "Spartan-Bold";
+        font-size: 35px;
+    }
+}

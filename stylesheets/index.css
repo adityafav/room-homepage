@@ -1,0 +1,256 @@
+@font-face {
+  font-family: "Spartan-Light";
+  src: url("../font/Spartan-Medium.ttf");
+}
+@font-face {
+  font-family: "Spartan-Medium";
+  src: url("../font/Spartan-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Spartan-Bold";
+  src: url("../font/Spartan-Bold.ttf");
+}
+body {
+  font-family: "Spartan-Light";
+  font-size: 12px;
+}
+
+.hidden, #hidden {
+  display: none;
+}
+
+button, a {
+  cursor: pointer;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Spartan-Medium";
+  font-size: 26px;
+}
+
+h4 {
+  font-family: "Spartan-Bold";
+  letter-spacing: 5px;
+}
+
+p {
+  color: #a1a1a1;
+  line-height: 1.2rem;
+}
+
+@media screen and (min-width: 376px) {
+  h1 {
+    font-family: "Spartan-Bold";
+    font-size: 35px;
+  }
+}
+body {
+  width: 375px;
+}
+
+main #top-left {
+  height: 23rem;
+  display: grid;
+  grid-template-rows: 7rem 1fr 3.5rem;
+  background-image: url("../images/mobile-image-hero-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main #top-left nav #navbar {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+}
+main #top-left nav #navbar #menu {
+  display: grid;
+  place-content: center;
+}
+main #top-left nav #navbar #head {
+  height: 100%;
+  display: grid;
+  align-content: center;
+  margin-left: 30%;
+}
+main #top-left nav #navbar h3 {
+  margin-left: 5rem;
+  font-size: 22px;
+  font-family: "Spartan-Bold";
+  color: white;
+}
+main #top-left nav #navbar a {
+  display: none;
+  justify-self: center;
+  font-family: "Spartan-Medium";
+  color: black;
+  text-decoration: none;
+}
+main #top-left #buttons-mobile {
+  grid-row-start: 3;
+  justify-self: right;
+  align-self: end;
+}
+main .buttons {
+  height: 100%;
+}
+main .buttons button {
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 3.5rem;
+  border: none;
+  background-color: black;
+}
+main .buttons #button-left {
+  margin-right: -3px;
+}
+main #top-right {
+  height: 20rem;
+  padding: 3rem 2rem;
+}
+main #top-right #active {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 5rem 1fr 5rem;
+}
+main #top-right #active h1 {
+  align-self: center;
+}
+main #top-right #active p {
+  color: #a1a1a1;
+  line-height: 1.2rem;
+}
+main #top-right #active button {
+  background: none;
+  border: none;
+}
+main #top-right #active button span {
+  font-family: "Spartan-Light";
+  letter-spacing: 10px;
+  float: left;
+}
+main #top-right #active button svg {
+  margin-left: -3rem;
+}
+
+footer #bottom-left {
+  height: 15rem;
+  background-image: url("../images/image-about-dark.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+footer #bottom {
+  height: 15rem;
+  display: grid;
+  grid-template-rows: 4rem 1fr;
+  padding: 3rem 2rem;
+}
+footer #bottom h4 {
+  align-self: center;
+}
+footer #bottom-right {
+  height: 15rem;
+  background-image: url("../images/image-about-light.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 376px) {
+  html, body {
+    height: 100%;
+    min-height: 100%;
+  }
+
+  body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #buttons-desktop {
+    display: block;
+  }
+
+  #buttons-mobile {
+    display: none;
+  }
+
+  main {
+    height: 70%;
+    display: flex;
+  }
+  main #top-left {
+    height: 100%;
+    width: 60%;
+    background-image: url("../images/desktop-image-hero-1.jpg");
+  }
+  main #top-left nav #navbar {
+    display: block;
+  }
+  main #top-left nav #navbar #menu {
+    display: none;
+  }
+  main #top-left nav #navbar #head {
+    width: 50%;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+    margin-left: 0;
+  }
+  main #top-left nav #navbar #head #logo {
+    justify-self: center;
+  }
+  main #top-left nav #navbar #head a {
+    display: block;
+    color: white;
+  }
+  main #top-right {
+    padding: 0;
+    height: 100%;
+    width: 40%;
+    display: grid;
+    grid-template-rows: 1fr 5rem;
+  }
+  main #top-right #active {
+    height: auto;
+    padding: 6rem 6rem 2rem 6rem;
+    grid-template-rows: 7rem 1fr 4rem;
+  }
+  main #top-right #active button svg {
+    margin-left: -8rem;
+  }
+  main #top-right .buttons {
+    height: 100%;
+  }
+  main #top-right .buttons button {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 5.1rem;
+    border: none;
+    background-color: black;
+  }
+  main #top-right .buttons #button-left {
+    margin-right: -4px;
+  }
+
+  footer {
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+  }
+  footer #bottom-left {
+    height: 100%;
+    width: 30%;
+  }
+  footer #bottom {
+    height: 100%;
+    width: 40%;
+  }
+  footer #bottom-right {
+    height: 100%;
+    width: 30%;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

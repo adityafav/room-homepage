@@ -1,0 +1,224 @@
+@use 'root';
+
+body{
+    width: 375px;
+}
+
+main{
+
+    #top-left{
+        height: 23rem;
+        display: grid;
+        grid-template-rows: 7rem 1fr 3.5rem;
+        background-image: url('../images/mobile-image-hero-1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        nav{
+            #navbar{
+                height: 100%;
+                display: grid;
+                grid-template-columns: 4.5rem 1fr;
+                #menu{
+                    display: grid;
+                    place-content: center;
+                }
+                #head{
+                    height: 100%;
+                    display: grid;
+                    align-content: center;
+                    margin-left: 30%;
+                }
+                h3{
+                   margin-left: 5rem;
+                   font-size: 22px;
+                   font-family: 'Spartan-Bold';
+                   color: root.$white;
+                }
+                a{
+                    display: none;
+                    justify-self: center;
+                    font-family: "Spartan-Medium";
+                    color: root.$black;
+                    text-decoration: none;
+                }
+            }
+        }
+        #buttons-mobile{
+            grid-row-start: 3;
+            justify-self: right;
+            align-self: end;
+        }
+    }
+    .buttons{
+        height: 100%;
+        button{
+            font-size: 20px;
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 3.5rem;
+            border: none;
+            background-color: root.$black;
+        }
+        #button-left{
+            margin-right: -3px;
+        }
+    }
+
+
+
+    #top-right{
+        height: 20rem;
+        padding: 3rem 2rem;
+        #active{    
+            height: 100%;
+            display: grid;
+            grid-template-rows: 5rem 1fr 5rem;
+            h1{
+                align-self: center;
+            }
+            p{
+                color: root.$gray;
+                line-height: 1.2rem;
+            }
+            button{
+                background: none;
+                border: none;
+                span{
+                    font-family: "Spartan-Light";
+                    letter-spacing: 10px;
+                    float: left;
+                }
+                svg{
+                    margin-left: -3rem;
+                }
+            }
+        }
+        
+    }
+}
+
+footer{
+
+    #bottom-left{
+        height: 15rem;
+        background-image: url('../images/image-about-dark.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #bottom{
+        height: 15rem;
+        display: grid;
+        grid-template-rows: 4rem 1fr;
+        padding: 3rem 2rem;
+        h4{
+            align-self: center;
+        }
+    }
+
+    #bottom-right{
+        height: 15rem;
+        background-image: url('../images/image-about-light.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+}
+
+@media screen and (min-width: 376px){
+    html, body{
+        height: 100%;
+        min-height: 100%;
+    }
+    body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #buttons-desktop{
+        display: block;
+    }
+    #buttons-mobile{
+        display: none;
+    }
+    main{
+        height: 70%;
+        display: flex;
+        #top-left{
+            height: 100%;
+            width: 60%;
+            background-image: url('../images/desktop-image-hero-1.jpg');
+            nav{
+                #navbar{
+                    display: block;
+                    #menu{
+                        display: none;
+                    }
+                    #head{
+                        width: 50%;
+                        grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+                        margin-left: 0;
+                        #logo{
+                            justify-self: center;
+                        }
+                        a{
+                            display: block;
+                            color: root.$white;
+                        }
+                    }
+                }
+            }
+        }
+        #top-right{
+            padding: 0;
+            height: 100%;
+            width: 40%;
+            display: grid;
+            grid-template-rows: 1fr 5rem;
+            #active{
+                height: auto;
+                padding: 6rem 6rem 2rem 6rem;
+                grid-template-rows: 7rem 1fr 4rem;
+                button{
+                    svg{
+                        margin-left: -8rem;
+                    }
+                }
+            }
+            .buttons{
+                height: 100%;
+                button{
+                    font-size: 20px;
+                    padding: 0;
+                    margin: 0;
+                    height: 100%;
+                    width: 5.1rem;
+                    border: none;
+                    background-color: root.$black;
+                }
+                #button-left{
+                    margin-right: -4px;
+                }
+            }
+        }
+    }
+    footer{
+        height: 30%;
+        display: flex;
+        flex-direction: row;
+        #bottom-left{
+            height: 100%;
+            width: 30%;
+        }
+        #bottom{
+            height: 100%;
+            width: 40%;
+
+        }
+        #bottom-right{
+            height: 100%;
+            width: 30%;
+        }
+    }
+}
